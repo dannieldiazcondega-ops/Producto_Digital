@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#294a36">
+    <title>Reencuentros familiares | Raíces, memoria y diversidad cultural</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="progreso" id="progreso"></div>
+
+    <header class="encabezado">
+        <a href="#inicio" class="marca"><span class="marca-icono">❧</span> Raíces <em>y memoria</em></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+
+        <nav class="menu" id="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#proyecto">El proyecto</a>
+            <a href="#genogramas">Familias</a>
+            <a href="#migracion">Migración</a>
+            <a href="#tradiciones">Tradiciones</a>
+            <a href="#comparacion">Comparación</a>
+            <a href="#reflexion">Reflexionemos</a>
+            <a href="#recuerdos">Recuerdos</a>
+        </nav>
+
+        <button class="tema-toggle" id="temaToggle" aria-label="Cambiar apariencia" title="Cambiar apariencia">☼</button>
+    </header>
+
+    <main>
+        <section class="portada" id="inicio">
+            <div class="portada-textura"></div>
+            <div class="portada-contenido entrada">
+                <p class="sobrelinea"><span></span> UNIVERSIDAD NACIONAL DE INGENIERÍA · INTERCULTURALIDAD</p>
+                <h1>Reencuentros familiares:<br><em>raíces, memoria y diversidad cultural</em></h1>
+                <p class="portada-descripcion">Cada familia guarda un universo de historias. Conocer nuestras raíces es descubrir los caminos, las costumbres y los recuerdos que nos conectan.</p>
+                <div class="portada-botones">
+                    <a href="#proyecto" class="boton boton-claro">Comenzar el recorrido <span>↘</span></a>
+                    <button class="boton boton-fantasma" id="frasePortada">Inspirame <span>✧</span></button>
+                </div>
+                <p class="frase-cambiante" id="fraseCambiante" aria-live="polite">Las raíces nos recuerdan de dónde venimos; la memoria nos ayuda a comprender quiénes somos.</p>
+            </div>
+            <div class="portada-sello" aria-hidden="true">
+                <span class="sello-circulo">RAÍCES<br>· MEMORIA ·<br>CULTURA</span>
+                <span class="sello-hoja">❦</span>
+            </div>
+            <a href="#proyecto" class="bajar" aria-label="Bajar a la siguiente sección">↓</a>
+        </section>
+
+        <section class="seccion introduccion" id="proyecto">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">01 · Nuestra historia</p>
+                <h2>Las raíces que <em>nos unen</em></h2>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <div class="texto-intro revelar">
+                <p>Las familias conservan recuerdos, costumbres, conocimientos y experiencias que pasan de una generación a otra. Conocer nuestras raíces nos permite comprender mejor nuestra identidad y reconocer la diversidad cultural que existe entre las personas.</p>
+                <p>Este proyecto reúne genogramas e información etnográfica para explorar los vínculos familiares, los procesos migratorios, las tradiciones y las semejanzas y diferencias entre nuestras historias.</p>
+            </div>
+
+            <div class="pilares">
+                <article class="pilar revelar">
+                    <span class="pilar-numero">01</span>
+                    <span class="pilar-icono">🌿</span>
+                    <h3>Raíces</h3>
+                    <p>Reconocer los lugares, las personas y los vínculos que forman nuestra historia.</p>
+                    <span class="pilar-pie">De dónde venimos</span>
+                </article>
+                <article class="pilar revelar">
+                    <span class="pilar-numero">02</span>
+                    <span class="pilar-icono">📖</span>
+                    <h3>Memoria</h3>
+                    <p>Resguardar los relatos, las experiencias y las enseñanzas que merecen continuar.</p>
+                    <span class="pilar-pie">Lo que recordamos</span>
+                </article>
+                <article class="pilar revelar">
+                    <span class="pilar-numero">03</span>
+                    <span class="pilar-icono">🤲</span>
+                    <h3>Diversidad</h3>
+                    <p>Escuchar otras experiencias y reconocer el valor de las diferencias culturales.</p>
+                    <span class="pilar-pie">Lo que compartimos</span>
+                </article>
+            </div>
+
+            <div class="cita-destacada revelar">
+                <span class="comilla">“</span>
+                <p>Una historia familiar no se compone únicamente de nombres y fechas, sino también de los recuerdos, esfuerzos y costumbres que pasan de generación en generación.</p>
+                <span class="cita-firma">Una reflexión sobre nuestras raíces</span>
+            </div>
+        </section>
+
+        <section class="seccion seccion-verde-suave" id="genogramas">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">02 · Nuestro legado</p>
+                <h2>Cuatro familias, <em>muchas historias</em></h2>
+                <p class="bajada">Explorá cada familia para descubrir parte de su historia y de las tradiciones que forman su identidad.</p>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <div class="familias-grid">
+                <article class="familia-card revelar">
+                    <div class="familia-foto">
+                        <img src="img/Alexander.png" alt="Genograma familiar de Alexander" loading="lazy">
+                        <span class="familia-sello">01</span>
+                        <span class="foto-ayuda">Genograma familiar</span>
+                    </div>
+                    <div class="familia-info">
+                        <p class="familia-categoria">Raíces y movilidad</p>
+                        <h3>Alexander Baltazar Alvarez Xona</h3>
+                        <p>Una historia con raíces familiares vinculadas con Guatemala y experiencias de movilidad hacia otros países.</p>
+                        <button class="boton-historia" data-historia="alexander">Descubrir su historia <span>↗</span></button>
+                    </div>
+                </article>
+
+                <article class="familia-card revelar">
+                    <div class="familia-foto">
+                        <img src="img/Dánniel.png" alt="Genograma familiar de Dánniel" loading="lazy">
+                        <span class="familia-sello">02</span>
+                        <span class="foto-ayuda">Genograma familiar</span>
+                    </div>
+                    <div class="familia-info">
+                        <p class="familia-categoria">Identidad y tradición</p>
+                        <h3>Dánniel Díaz Condega</h3>
+                        <p>Una historia ligada a Ometepe, las ocupaciones familiares y las celebraciones que reúnen a sus generaciones.</p>
+                        <button class="boton-historia" data-historia="danniel">Descubrir su historia <span>↗</span></button>
+                    </div>
+                </article>
+
+                <article class="familia-card revelar">
+                    <div class="familia-foto">
+                        <img src="img/Adan.png" alt="Genograma familiar de Wendorlling Adán" loading="lazy">
+                        <span class="familia-sello">03</span>
+                        <span class="foto-ayuda">Genograma familiar</span>
+                    </div>
+                    <div class="familia-info">
+                        <p class="familia-categoria">Vínculos y costumbres</p>
+                        <h3>Wendorlling Adán López Pérez</h3>
+                        <p>Una historia familiar vinculada con Ticuantepe y la importancia de conservar costumbres y vínculos entre generaciones.</p>
+                        <button class="boton-historia" data-historia="adan">Descubrir su historia <span>↗</span></button>
+                    </div>
+                </article>
+
+                <article class="familia-card revelar">
+                    <div class="familia-foto">
+                        <img src="img/Brissia.png" alt="Genograma familiar de Brissia" loading="lazy">
+                        <span class="familia-sello">04</span>
+                        <span class="foto-ayuda">Genograma familiar</span>
+                    </div>
+                    <div class="familia-info">
+                        <p class="familia-categoria">Migración y memoria</p>
+                        <h3>Brissia Isabel Taleno González</h3>
+                        <p>Una historia con recorridos entre municipios, experiencias laborales y tradiciones que fortalecen la convivencia familiar.</p>
+                        <button class="boton-historia" data-historia="brissia">Descubrir su historia <span>↗</span></button>
+                    </div>
+                </article>
+            </div>
+            <p class="nota-final revelar">Cada genograma representa una historia particular. Los datos que no se han podido establecer no deben interpretarse como ausencia de vínculos o tradiciones.</p>
+        </section>
+
+        <section class="seccion" id="migracion">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">03 · Caminos recorridos</p>
+                <h2>La migración también <em>cuenta historias</em></h2>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <div class="migracion-intro revelar">
+                <div>
+                    <p>La migración ocurre cuando las personas se trasladan de un lugar a otro para vivir, trabajar, estudiar o reunirse con familiares. Estos movimientos pueden transformar la vida cotidiana y crear nuevas conexiones culturales.</p>
+                    <p>En las historias recopiladas aparecen recorridos dentro de Nicaragua y experiencias que conectan distintos países. Cada desplazamiento puede influir en las relaciones, las oportunidades y las costumbres familiares.</p>
+                </div>
+                <div class="migracion-destacado">
+                    <span>⌖</span>
+                    <p class="etiqueta">Una idea para recordar</p>
+                    <h3>Podemos cambiar de lugar sin perder el sentido de pertenencia.</h3>
+                    <p>Las historias, los recuerdos y las tradiciones pueden acompañar a las familias a lo largo de sus caminos.</p>
+                </div>
+            </div>
+
+            <div class="ruta-migratoria revelar">
+                <div class="ruta-punto">
+                    <span class="ruta-icono">⌂</span>
+                    <h3>Origen</h3>
+                    <p>El lugar donde comienzan muchas historias familiares.</p>
+                </div>
+                <span class="ruta-linea">··················→</span>
+                <div class="ruta-punto">
+                    <span class="ruta-icono">↗</span>
+                    <h3>Movimiento</h3>
+                    <p>Los cambios de residencia y las nuevas experiencias.</p>
+                </div>
+                <span class="ruta-linea">··················→</span>
+                <div class="ruta-punto">
+                    <span class="ruta-icono">♡</span>
+                    <h3>Continuidad</h3>
+                    <p>Los lazos y recuerdos que pueden mantenerse.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccion seccion-beige" id="tradiciones">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">04 · Herencia cultural</p>
+                <h2>Tradiciones que <em>permanecen</em></h2>
+                <p class="bajada">Seleccioná una tarjeta para conocer lo que una tradición puede aportar a la memoria familiar.</p>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <div class="tradiciones-grid">
+                <button class="tradicion-card revelar" data-tradicion="celebraciones" aria-expanded="false">
+                    <span class="tradicion-ilustracion">🎄</span>
+                    <span class="tradicion-titulo">Celebraciones</span>
+                    <span class="tradicion-resumen">Fechas para encontrarnos</span>
+                    <span class="tradicion-detalle">Navidad, Año Nuevo, cumpleaños y otras celebraciones pueden crear recuerdos compartidos y fortalecer los vínculos familiares.</span>
+                    <span class="tradicion-indicador">Tocá para descubrir +</span>
+                </button>
+                <button class="tradicion-card revelar" data-tradicion="religion" aria-expanded="false">
+                    <span class="tradicion-ilustracion">🕯️</span>
+                    <span class="tradicion-titulo">Prácticas religiosas</span>
+                    <span class="tradicion-resumen">Fe y comunidad</span>
+                    <span class="tradicion-detalle">Las prácticas religiosas pueden reunir a las familias, transmitir valores y formar parte de la identidad de una comunidad.</span>
+                    <span class="tradicion-indicador">Tocá para descubrir +</span>
+                </button>
+                <button class="tradicion-card revelar" data-tradicion="comida" aria-expanded="false">
+                    <span class="tradicion-ilustracion">🍲</span>
+                    <span class="tradicion-titulo">Comida y convivencia</span>
+                    <span class="tradicion-resumen">Sabores que nos reúnen</span>
+                    <span class="tradicion-detalle">Preparar y compartir alimentos puede transmitir conocimientos, recordar a quienes nos enseñaron y crear espacios de convivencia.</span>
+                    <span class="tradicion-indicador">Tocá para descubrir +</span>
+                </button>
+                <button class="tradicion-card revelar" data-tradicion="saberes" aria-expanded="false">
+                    <span class="tradicion-ilustracion">🌱</span>
+                    <span class="tradicion-titulo">Saberes heredados</span>
+                    <span class="tradicion-resumen">Aprendizajes de generación en generación</span>
+                    <span class="tradicion-detalle">Las historias, los oficios y los conocimientos cotidianos pueden pasar de mayores a jóvenes y adaptarse con el tiempo.</span>
+                    <span class="tradicion-indicador">Tocá para descubrir +</span>
+                </button>
+            </div>
+            <p class="nota-final revelar">Estos ejemplos representan categorías culturales que aparecen en las historias; no significa que todas las familias practiquen cada una de ellas.</p>
+        </section>
+
+        <section class="seccion" id="comparacion">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">05 · Mirar en conjunto</p>
+                <h2>Semejanzas y <em>diferencias</em></h2>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <div class="comparacion-grid">
+                <article class="comparacion-card comunes revelar">
+                    <span class="comparacion-simbolo">✳</span>
+                    <p class="etiqueta">Lo que nos acerca</p>
+                    <h3>Patrones comunes</h3>
+                    <ul>
+                        <li>La familia como fuente de identidad y pertenencia.</li>
+                        <li>Las costumbres y celebraciones como parte de la memoria.</li>
+                        <li>La transmisión de experiencias entre generaciones.</li>
+                    </ul>
+                    <span class="comparacion-pie">Los vínculos también son herencia.</span>
+                </article>
+                <article class="comparacion-card distintas revelar">
+                    <span class="comparacion-simbolo">✧</span>
+                    <p class="etiqueta">Lo que nos hace únicos</p>
+                    <h3>Aspectos diferentes</h3>
+                    <ul>
+                        <li>Los lugares de origen y los recorridos migratorios.</li>
+                        <li>Las ocupaciones y trayectorias laborales.</li>
+                        <li>Las celebraciones y prácticas culturales particulares.</li>
+                    </ul>
+                    <span class="comparacion-pie">Las diferencias también enriquecen.</span>
+                </article>
+            </div>
+
+            <div class="reflexion-cierre revelar">
+                <span>❦</span>
+                <p>Comparar no significa decidir qué familia es mejor, sino aprender a reconocer tanto lo que compartimos como aquello que hace especial cada historia.</p>
+            </div>
+        </section>
+
+        <section class="seccion seccion-verde-suave" id="reflexion">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">06 · Tu turno de pensar</p>
+                <h2>Preguntas para <em>reflexionar</em></h2>
+                <p class="bajada">Presioná cada pregunta para revelar su respuesta. También podés probar tus conocimientos en la actividad interactiva.</p>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <div class="preguntas" id="preguntas">
+                <article class="pregunta revelar">
+                    <button class="pregunta-boton" aria-expanded="false">
+                        <span class="pregunta-numero">01</span>
+                        <span class="pregunta-texto">¿Por qué es importante conocer nuestras raíces familiares?</span>
+                        <span class="pregunta-signo">+</span>
+                    </button>
+                    <div class="pregunta-respuesta" hidden>
+                        <p>Porque nos ayuda a comprender nuestra identidad, conocer las experiencias de generaciones anteriores y valorar los recuerdos y aprendizajes que han influido en nuestra familia.</p>
+                    </div>
+                </article>
+                <article class="pregunta revelar">
+                    <button class="pregunta-boton" aria-expanded="false">
+                        <span class="pregunta-numero">02</span>
+                        <span class="pregunta-texto">¿Cómo influye la migración en la identidad cultural de una familia?</span>
+                        <span class="pregunta-signo">+</span>
+                    </button>
+                    <div class="pregunta-respuesta" hidden>
+                        <p>La migración puede acercar a las familias a nuevas costumbres y formas de vida. Al mismo tiempo, pueden conservar parte de sus raíces mediante sus recuerdos, su idioma, su comida y sus celebraciones.</p>
+                    </div>
+                </article>
+                <article class="pregunta revelar">
+                    <button class="pregunta-boton" aria-expanded="false">
+                        <span class="pregunta-numero">03</span>
+                        <span class="pregunta-texto">¿Qué papel cumplen las tradiciones en la transmisión de la cultura?</span>
+                        <span class="pregunta-signo">+</span>
+                    </button>
+                    <div class="pregunta-respuesta" hidden>
+                        <p>Las tradiciones permiten compartir conocimientos, valores y recuerdos entre generaciones. También crean espacios de convivencia y ayudan a mantener viva parte de la herencia cultural.</p>
+                    </div>
+                </article>
+                <article class="pregunta revelar">
+                    <button class="pregunta-boton" aria-expanded="false">
+                        <span class="pregunta-numero">04</span>
+                        <span class="pregunta-texto">¿Cómo podemos respetar la diversidad cultural entre las familias?</span>
+                        <span class="pregunta-signo">+</span>
+                    </button>
+                    <div class="pregunta-respuesta" hidden>
+                        <p>Escuchando sin juzgar, reconociendo que existen distintas formas de vivir y celebrar, y evitando considerar una cultura superior a otra. El respeto comienza cuando estamos dispuestos a aprender de los demás.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mini-reto revelar" id="miniReto">
+                <div class="reto-encabezado">
+                    <span class="reto-icono">✦</span>
+                    <div>
+                        <p class="etiqueta">Pequeño reto intercultural</p>
+                        <h3>¿Qué harías vos?</h3>
+                    </div>
+                </div>
+                <p class="reto-pregunta" id="retoPregunta">Una persona comparte una tradición familiar diferente a la tuya. ¿Cuál es la mejor manera de responder?</p>
+                <div class="reto-opciones" id="retoOpciones">
+                    <button class="opcion-reto" data-correcta="false">Decir que mi tradición es la única correcta.</button>
+                    <button class="opcion-reto" data-correcta="true">Escuchar, preguntar con respeto y aprender.</button>
+                    <button class="opcion-reto" data-correcta="false">Ignorar la historia porque es diferente.</button>
+                </div>
+                <p class="reto-feedback" id="retoFeedback" aria-live="polite"></p>
+                <button class="boton boton-verde" id="siguienteReto" hidden>Siguiente pregunta ↗</button>
+                <div class="reto-pie"><span id="retoContador">Pregunta 1 de 3</span><span class="reto-barra"><span id="retoProgreso"></span></span></div>
+            </div>
+        </section>
+
+        <section class="seccion recuerdos-seccion" id="recuerdos">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">07 · Tu voz también cuenta</p>
+                <h2>Una historia que <em>merece ser recordada</em></h2>
+                <p class="bajada">Compartí una tradición, un recuerdo o una enseñanza importante de tu familia.</p>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <form class="formulario-recuerdo revelar" id="formularioRecuerdo">
+                <div class="formulario-intro">
+                    <span>✍</span>
+                    <p>Las historias más sencillas pueden guardar enseñanzas extraordinarias.</p>
+                </div>
+
+                <label for="nombreRecuerdo">Tu nombre <span>(opcional)</span></label>
+                <input type="text" id="nombreRecuerdo" maxlength="80" placeholder="¿Cómo te llamás?">
+
+                <label for="tipoRecuerdo">¿Qué querés compartir?</label>
+                <select id="tipoRecuerdo" required>
+                    <option value="">Elegí el tipo de recuerdo</option>
+                    <option value="Tradición familiar">Una tradición familiar</option>
+                    <option value="Recuerdo especial">Un recuerdo especial</option>
+                    <option value="Enseñanza importante">Una enseñanza importante</option>
+                </select>
+
+                <label for="textoRecuerdo">Tu historia</label>
+                <textarea id="textoRecuerdo" rows="5" maxlength="1200" placeholder="Contanos por qué es importante para vos..." required></textarea>
+                <div class="contador-texto"><span id="contadorTexto">0</span>/1200 caracteres</div>
+
+                <button type="submit" class="boton boton-verde">Añadir mi recuerdo <span>♡</span></button>
+                <p class="aviso-formulario">Los recuerdos se muestran únicamente mientras esta página permanezca abierta. No se guardan permanentemente ni se envían a internet.</p>
+            </form>
+
+            <div class="recuerdos-mostrados" id="recuerdosMostrados" aria-live="polite"></div>
+            <p class="recuerdos-vacios" id="recuerdosVacios">Tu recuerdo puede ser el primero de este pequeño muro de memoria.</p>
+        </section>
+
+        <section class="seccion seccion-beige" id="referencias">
+            <div class="encabezado-seccion revelar">
+                <p class="etiqueta">08 · Fuentes de referencia</p>
+                <h2>Para comprender la <em>diversidad cultural</em></h2>
+                <span class="ornamento">❧</span>
+            </div>
+
+            <div class="referencias-lista">
+                <article class="referencia revelar">
+                    <span class="referencia-numero">01</span>
+                    <div>
+                        <h3>UNESCO · Patrimonio cultural inmaterial</h3>
+                        <p>Convención para la Salvaguardia del Patrimonio Cultural Inmaterial (2003).</p>
+                        <a href="https://ich.unesco.org/es/convenci%C3%B3n" target="_blank" rel="noopener noreferrer">Abrir recurso institucional ↗</a>
+                    </div>
+                </article>
+                <article class="referencia revelar">
+                    <span class="referencia-numero">02</span>
+                    <div>
+                        <h3>UNESCO · Diversidad cultural</h3>
+                        <p>Declaración Universal de la UNESCO sobre la Diversidad Cultural (2001).</p>
+                        <a href="https://unesdoc.unesco.org/ark:/48223/pf0000127162_spa" target="_blank" rel="noopener noreferrer">Abrir recurso institucional ↗</a>
+                    </div>
+                </article>
+                <article class="referencia revelar">
+                    <span class="referencia-numero">03</span>
+                    <div>
+                        <h3>INIDE · Nicaragua</h3>
+                        <p>Portal del Instituto Nacional de Información de Desarrollo.</p>
+                        <a href="https://www.inide.gob.ni/" target="_blank" rel="noopener noreferrer">Visitar portal ↗</a>
+                    </div>
+                </article>
+                <article class="referencia revelar">
+                    <span class="referencia-numero">04</span>
+                    <div>
+                        <h3>INE · Guatemala</h3>
+                        <p>Portal del Instituto Nacional de Estadística de Guatemala.</p>
+                        <a href="https://www.ine.gob.gt/" target="_blank" rel="noopener noreferrer">Visitar portal ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cierre">
+            <div class="cierre-ornamento">❦</div>
+            <p class="etiqueta">Una memoria compartida</p>
+            <h2>Las raíces nos conectan.<br><em>La diversidad nos enriquece.</em></h2>
+            <p>Detrás de cada nombre hay un camino. Detrás de cada tradición, una historia. Y detrás de cada familia, una memoria que merece ser escuchada.</p>
+            <a href="#inicio" class="boton boton-claro">Volver al comienzo ↑</a>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <div class="pie-decoracion">❧</div>
+        <p class="pie-titulo">Un proyecto construido con memoria familiar.</p>
+        <p><strong>Integrantes:</strong> Alexander Baltazar Alvarez Xona, Dánniel Díaz Condega, Wendorlling Adán López Pérez y Brissia Isabel Taleno González.</p>
+        <p><strong>Institución:</strong> Universidad Nacional de Ingeniería (UNI), componente de Interculturalidad.</p>
+        <p><strong>Uso de inteligencia artificial:</strong> se utilizó ChatGPT como herramienta de apoyo para organizar la estructura de la página y revisar la redacción y el código. Los datos familiares proceden de la información compartida por los integrantes; los datos desconocidos se identifican como pendientes o no disponibles.</p>
+        <span class="pie-linea"></span>
+        <p class="pie-final">Raíces, memoria y diversidad cultural <span>♡</span></p>
+    </footer>
+
+    <div class="modal" id="modalHistoria" aria-hidden="true">
+        <div class="modal-fondo cerrar-modal"></div>
+        <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+            <button class="modal-cerrar cerrar-modal" aria-label="Cerrar historia">×</button>
+            <p class="etiqueta">Una historia familiar</p>
+            <h2 id="modalTitulo"></h2>
+            <div id="modalTexto"></div>
+            <button class="boton boton-verde cerrar-modal">Volver a las familias</button>
+        </div>
+    </div>
+
+    <button class="arriba" id="arriba" aria-label="Volver arriba">↑</button>
+</body>
+</html>
